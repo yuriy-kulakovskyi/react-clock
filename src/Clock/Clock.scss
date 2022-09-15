@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic");
+
+.clock-wrapper {
+  width: 30%; min-height: 80vh;
+  background-color: rgb(33, 36, 39);
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgb(150, 185, 185);
+
+  &__header {
+    width: 100%; min-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px 0;
+
+    &__title {
+      font-size: 30px;
+      color: #fff;
+      font-family: "Monstserrat", sans-serif;
+      text-transform: capitalize;
+    }
+
+    &__subtitle {
+      font-size: 17px;
+      color: #c8c8c8;
+      font-family: "Monstserrat", sans-serif;
+      text-transform: capitalize;
+      opacity: .1;
+    }
+  }
+
+  &__main {
+    width: 100%; min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__circle {
+      position: relative;
+      width: 300px; height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &__svg {
+        position: relative;
+        width: 300px; height: 300px;
+        transform: rotate(270deg);
+
+        circle {
+          fill: transparent;
+          stroke: rgb(21, 23, 24);
+          stroke-width: 8px;
+          transform: translate(10px, 10px);
+          width: 100%; height: 100%;
+
+          &:nth-child(2) {
+            stroke: #00FF00;
+          }
+        }
+      }
+
+      &__dot {
+        position: absolute;
+        width: 100%; height: 100%;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 8px;
+          width: 15px; height: 15px;
+          background-color: #00FF00;
+          border-radius: 100%;
+          box-shadow: 0 0 20px #00FF00, 0 0 60px #00FF00;
+        }
+      }
+
+      &__time {
+        color: #fff;
+        font-family: "Montserrat", sans-serif;
+        font-size: 50px;
+        position: absolute;
+
+        .dots {
+          color: rgb(21, 23, 24);
+          text-shadow: 0 .5px 1px rgb(125, 134, 134);
+        }
+      }
+    }
+  }
+}
