@@ -72,7 +72,11 @@
         color: #fff;
         font-family: "Montserrat", sans-serif;
         font-size: 50px;
-        position: absolute; }
+        position: absolute;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 6px; }
         .clock-wrapper__main__circle__time .dots {
           color: #151718;
           text-shadow: 0 0.5px 1px #7d8686; }
