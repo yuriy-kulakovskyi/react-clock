@@ -97,4 +97,16 @@
       }
     }
   }
+
+  @media (max-width: 964px) {
+    width: 70%;
+  }
+
+  @media (max-width: 438px) {
+    width: 90%;
+  }
+
+  @media (max-width: 359px) {
+    width: 97%;
+  }
 }

@@ -80,5 +80,14 @@
         .clock-wrapper__main__circle__time .dots {
           color: #151718;
           text-shadow: 0 0.5px 1px #7d8686; }
+  @media (max-width: 964px) {
+    .clock-wrapper {
+      width: 70%; } }
+  @media (max-width: 438px) {
+    .clock-wrapper {
+      width: 90%; } }
+  @media (max-width: 359px) {
+    .clock-wrapper {
+      width: 97%; } }
 
 /*# sourceMappingURL=Clock.css.map */
